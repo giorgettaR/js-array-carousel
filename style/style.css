@@ -29,9 +29,10 @@ main {
     width: 100%;
 }
 
-.carousel .img div {
+.carousel .img .file {
     height: 100%;
     width: 100%;
+    display: none;
 }
 
 .carousel img {
