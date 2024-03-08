@@ -24,18 +24,22 @@ main {
     position: relative;
 }
 
-.carousel .img {
+.img {
     height: 100%;
     width: 100%;
 }
 
-.carousel .img .file {
+.file {
     height: 100%;
     width: 100%;
     display: none;
 }
 
-.carousel img {
+.file.active {
+    display: block;
+}
+
+img {
     object-fit: cover;
     width: 100%;
     max-height: 100%;
