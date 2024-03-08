@@ -40,8 +40,10 @@ console.log(thumbnailsDiv);
 
 // attivare la prima immagine
 
-let activeImage = document.querySelector('.img');
+let activeImage = document.querySelector('#imageBox .img');
 activeImage.classList.add('active');
+let activeThumbnail = document.querySelector('#thumbnails .img');
+activeThumbnail.classList.add('active');
 let activeImageIndex = 0;
 
 // interazione click sulle freccie
