@@ -22,8 +22,8 @@ console.log(imagesUrl.length);
 
 // aggiungere struttura immagini all'html
 
-const imagesBox = document.querySelector('.img');
-imagesBox.innerHTML = imagesHtmlCode;
+const imagesBox = document.querySelector('.carousel');
+imagesBox.innerHTML += imagesHtmlCode;
 
 // creazione HTMLCollectio (array) file immagini
 
