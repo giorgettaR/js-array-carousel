@@ -18,6 +18,7 @@ for (i = 0; i < imagesUrl.length; i++){
     </div>
     `;
 }
+console.log(imagesUrl.length);
 
 // aggiungere struttura immagini all'html
 
@@ -41,13 +42,23 @@ const arrowUp = document.querySelector('.arrowUp');
 const arrowDown = document.querySelector('.arrowDown');
 
 arrowDown.addEventListener('click', function(){
-    imagesDiv[activeImageIndex].classList.remove('active');
-    activeImageIndex++;
+    if (activeImageIndex + 1 !== imagesUrl.length){
+        imagesDiv[activeImageIndex].classList.remove('active');
+        activeImageIndex++;
+    } else {
+        imagesDiv[activeImageIndex].classList.remove('active');
+        activeImageIndex = 0;
+    }
     imagesDiv[activeImageIndex].classList.add('active');
 })
 
 arrowUp.addEventListener('click', function(){
-    imagesDiv[activeImageIndex].classList.remove('active');
-    activeImageIndex--;
+    if (activeImageIndex + 1 !== 1){
+        imagesDiv[activeImageIndex].classList.remove('active');
+        activeImageIndex--;
+    } else {
+        imagesDiv[activeImageIndex].classList.remove('active');
+        activeImageIndex = imagesUrl.length - 1;
+    }
     imagesDiv[activeImageIndex].classList.add('active');
 })
