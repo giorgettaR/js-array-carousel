@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    height: 80%;
+    width: 80%;
+    margin: auto;   
+    position: relative;
+}
+
+.carousel .img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel .img div {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.arrowDown,
+.arrowUp {
+    position: absolute;
+    color: white;
+}
+
+.arrowDown {
+    bottom: 2rem;
+    left: calc(50% - 1rem);
+}
+
+
+.arrowUp {
+    top: 2rem;
+    left: calc(50% - 1rem);
+}
